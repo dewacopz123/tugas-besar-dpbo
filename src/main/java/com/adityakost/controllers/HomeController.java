@@ -166,6 +166,11 @@ public class HomeController {
     return "pesan";
     }
 
+    @GetMapping("/pengguna")
+    public String pengguna() {
+        return "pengguna";
+    }
+
     // Proses logout
     @GetMapping("/logout")
     public String logout(HttpSession session) {
